@@ -1,12 +1,14 @@
 package raw
 
-import "go.ybk.im/homepage/internal/app/res/compilers"
+import (
+	compilers2 "go.ybk.im/homepage/internal/app/skins/res/compilers"
+)
 
 type Compiler struct {
 	contentType string
 }
 
-func NewCompiler(contentType string) compilers.Compiler {
+func NewCompiler(contentType string) compilers2.Compiler {
 	return &Compiler{
 		contentType: contentType,
 	}

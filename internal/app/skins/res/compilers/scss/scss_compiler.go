@@ -3,7 +3,7 @@ package scss
 import (
 	"bytes"
 
-	"go.ybk.im/homepage/internal/app/res/compilers"
+	compilers2 "go.ybk.im/homepage/internal/app/skins/res/compilers"
 
 	"github.com/wellington/go-libsass"
 )
@@ -12,7 +12,7 @@ type Compiler struct {
 	basePath string
 }
 
-func NewCompiler(basePath string) compilers.Compiler {
+func NewCompiler(basePath string) compilers2.Compiler {
 	return &Compiler{
 		basePath: basePath,
 	}

@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"go.ybk.im/homepage/internal/app/res/compilers"
+	compilers2 "go.ybk.im/homepage/internal/app/skins/res/compilers"
 )
 
 type Handler struct {
@@ -15,7 +15,7 @@ type Handler struct {
 	contentType string
 }
 
-func NewHandler(fileName string, compiler compilers.Compiler) *Handler {
+func NewHandler(fileName string, compiler compilers2.Compiler) *Handler {
 	fileName = filepath.Clean(fileName)
 
 	_, err := os.Stat(fileName)
